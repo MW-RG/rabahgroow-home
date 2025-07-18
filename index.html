@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)라바그루 - AI·R&D·SI 전문 IT 서비스 기업</title>
+    <meta name="description" content="(주)라바그루는 AI, R&D, SI, 국방, 사이버보안 등 다양한 IT 서비스를 제공하는 신뢰받는 IT 전문 기업입니다.">
+    <meta name="keywords" content="라바그루, AI, R&D, SI, IT 서비스, 사이버보안, 국방, 소프트웨어 개발">
+    <meta property="og:title" content="(주)라바그루 - AI·R&D·SI 전문 IT 서비스 기업">
+    <meta property="og:description" content="AI, R&D, SI, 국방, 사이버보안 등 다양한 IT 서비스를 제공하는 신뢰받는 IT 전문 기업">
+    <meta property="og:image" content="assets/image/logo_color.svg">
+    <meta property="og:url" content="https://rabahgroow.com">
+    <link rel="icon" href="assets/image/logo_color.svg" type="image/svg+xml">
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body style="background:#fff;">
+    <h1 style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">(주)라바그루 - AI·R&D·SI 전문 IT
+        서비스 기업</h1>
+    <!-- Desktop Header (데스크탑 전용) -->
+    <header class="header desktop-header">
+        <div class="navbar-inner">
+            <img src="assets/image/logo_white.svg" alt="로고" class="navbar-logo">
+            <ul class="navbar-menu">
+                <li><a href="#hero">ABOUT</a></li>
+                <li><a href="#history">HISTORY</a></li>
+                <li><a href="#business">BUSINESS</a></li>
+                <li><a href="#technology">R&D</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Header (상단 바, 모바일 전용) -->
+    <header class="header is-hidden-desktop"
+        style="width:100%; height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 1rem; background:transparent; position:fixed; top:0; left:0; z-index:100;">
+        <img src="assets/image/logo_white.svg" alt="로고" style="height:32px;">
+        <img src="assets/image/icon_list.png" alt="메뉴" id="mobile-menu-icon"
+            style="height:32px; width:32px; cursor:pointer;">
+    </header>
+
+    <!-- Mobile Side Menu (모바일 사이드 메뉴) -->
+    <div class="mobile-side-menu" id="mobile-side-menu">
+        <div class="mobile-side-menu-content">
+            <div class="mobile-menu-header">
+                <img src="assets/image/icon_close.png" alt="닫기" id="mobile-menu-close" class="mobile-menu-close">
+            </div>
+            <ul class="mobile-menu-list">
+                <li><a href="#hero" id="about-link">ABOUT</a></li>
+                <li><a href="#history">HISTORY</a></li>
+                <li><a href="#business">BUSINESS</a></li>
+                <li><a href="#technology">R&D</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero is-fullheight-with-navbar" id="hero"
+        style="min-height: 100vh; height: 100vh; position: relative;">
+        <div class="video-slider">
+            <div class="video-container">
+                <video class="slider-video active" id="slider-video-0" autoplay muted loop playsinline>
+                    <source src="assets/video/rabah_home_1.mp4" type="video/mp4">
+                </video>
+                <video class="slider-video" id="slider-video-1" autoplay muted loop playsinline>
+                    <source src="assets/video/rabah_home_2.mp4" type="video/mp4">
+                </video>
+                <video class="slider-video" id="slider-video-2" autoplay muted loop playsinline>
+                    <source src="assets/video/rabah_home_3.mp4" type="video/mp4">
+                </video>
+                <video class="slider-video" id="slider-video-3" autoplay muted loop playsinline>
+                    <source src="assets/video/rabah_home_4.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Overlayed Text and Indicator -->
+            <div class="hero-overlay">
+                <div class="hero-text-group" id="slogan-group">
+                    <h1 class="hero-title" id="slogan-title">신뢰를 설계하는<br>지능형 보안 AI</h1>
+                    <p class="hero-desc" id="slogan-desc">AI 기반의 통합 데이터 서비스를 통해 가치를 발견하고 미래를 설계합니다.</p>
+                </div>
+                <div class="hero-indicator">
+                    <img src="assets/image/slider.png" alt="슬라이더" class="hero-indicator-bar">
+                    <span class="hero-indicator-page" id="indicator-page">01 <span class="hero-indicator-total">/
+                            04</span></span>
+                    <span class="hero-indicator-arrows">
+                        <img src="assets/image/caret_left.png" alt="왼쪽 화살표" style="height: 1rem; width: 1rem;">
+                        <img src="assets/image/caret_right.png" alt="오른쪽 화살표" style="height: 1rem; width: 1rem;">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTORY Section -->
+    <section class="section history-section" id="history">
+        <div class="container history-container">
+            <h2 class="section-label">HISTORY</h2>
+            <h3 class="section-title">최고의 IT R&D 서비스 기업을 향한 도약</h3>
+            <p class="section-desc">라바그루는 사이버 보안, 국방, 건설 안전 분야에서 <br>R&D 서비스와 소프트웨어 개발에 특화된 전문 기업으로 성장하고 있습니다.</p>
+            <div class="history-flex-row">
+                <div class="history-years">
+                    <button class="history-year-btn selected" data-year="2024">2024</button>
+                    <button class="history-year-btn" data-year="2023">2023</button>
+                    <button class="history-year-btn" data-year="2022">2022</button>
+                    <button class="history-year-btn" data-year="2021">2021</button>
+                    <button class="history-year-btn" data-year="2020">2020~</button>
+                </div>
+                <ul class="history-list" id="history-list">
+                    <!-- JS로 렌더링 -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sliding Text Section -->
+    <section class="sliding-text-section">
+        <div class="sliding-text-container">
+            <div class="sliding-text-content" id="sliding-text-content">
+                <span class="sliding-text">Building the Future • Growing with Purpose • Thriving Together •
+                    RABAHGROOW</span>
+                <span class="sliding-text">Building the Future • Growing with Purpose • Thriving Together •
+                    RABAHGROOW</span>
+                <span class="sliding-text">Building the Future • Growing with Purpose • Thriving Together •
+                    RABAHGROOW</span>
+                <span class="sliding-text">Building the Future • Growing with Purpose • Thriving Together •
+                    RABAHGROOW</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BUSINESS Section -->
+    <section class="section business-section" id="business">
+        <div class="business-container">
+            <div class="section-label">BUSINESS</div>
+            <h3 class="section-title">현장을 이해하고, 기술로 해결하는 <br>IT 전문 기업</h3>
+            <p class="section-desc">국방, 사이버 보안, 건설안전, SI 분야에서 문제 해결 중심의 R&D 서비스와 <br>맞춤형 소프트웨어 개발을 제공합니다.</p>
+            <div class="business-category-wrap">
+                <div class="business-category-btns">
+                    <button class="business-category-btn selected" data-type="defense">국방사업</button>
+                    <button class="business-category-btn" data-type="rnd">연구사업</button>
+                    <button class="business-category-btn" data-type="si">SI 사업</button>
+                </div>
+                <div class="business-content" id="business-content">
+                    <!-- JS로 렌더링 -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- R&D TECHNOLOGY Section -->
+    <section class="section rnd-section" id="technology">
+        <div class="container">
+            <div class="section-label">R&D TECHNOLOGY</div>
+            <h3 class="section-title">축적된 기술과 경험으로 완성된 <br>AI 솔루션</h3>
+            <p class="section-desc">데이터 분석, 딥러닝, 고도화된 처리 기술과 프로그래밍 역량을 기반으로<br>현실 문제에 대한 정교한 솔루션을 제공합니다.</p>
+            <div class="rnd-content rnd-slider" id="rnd-slider">
+                <!-- JS로 이미지 렌더링 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO Section -->
+    <section class="section" id="portfolio">
+        <div class="container portfolio-container">
+            <div class="portfolio-info-wrap">
+                <div class="section-label">PORTFOLIO</div>
+                <h3 class="section-title">성과로 증명하는 우리의 기술</h3>
+                <p class="section-desc">축적된 프로젝트 성과와 현장 중심의 <br>신뢰받는 IT 서비스 기업의 가치를 증명합니다.</p>
+                <div class="portfolio-nav-wrap">
+                    <button class="portfolio-nav-btn prev" aria-label="이전 포트폴리오">
+                        <img src="assets/image/caret_left_black.png" alt="이전" class="portfolio-nav-icon">
+                    </button>
+                    <button class="portfolio-nav-btn next" aria-label="다음 포트폴리오">
+                        <img src="assets/image/caret_right_black.png" alt="다음" class="portfolio-nav-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="portfolio-content-col">
+                <div class="portfolio-info">
+                    <div class="portfolio-title">해운항만 물류업체 현황 모니터링 시스템</div>
+                    <div class="portfolio-desc">SI 사업</div>
+                </div>
+                <img src="assets/image/portfolio_m_7.png" alt="포트폴리오 예시" class="portfolio-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- 협력업체 로고 무한 슬라이더 -->
+    <section class="org-logo-section">
+        <div class="org-logo-slider" id="org-logo-slider"></div>
+    </section>
+
+    <!-- CONTACT Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-bg"></div>
+        <div class="contact-overlay"></div>
+        <div class="contact-content">
+            <div class="contact-label">CONTACT</div>
+            <div class="contact-title">의뢰할 프로젝트가 있으신가요?</div>
+            <div class="contact-desc">
+                라바그루는 고객과의 신뢰를 바탕으로 최고의 IT 서비스를 제공해드립니다.
+            </div>
+            <div class="contact-info">
+                02-451-8145 | <span class="contact-email">sungsamhong@rabahgroow.com</span>
+            </div>
+            <a class="contact-btn" href="mailto:sungsamhong@rabahgroow.com">
+                문의하기
+                <img src="assets/image/arrow_right.png" alt="문의하기" class="contact-btn-arrow">
+            </a>
+        </div>
+        <a class="contact-fab email" href="mailto:sungsamhong@rabahgroow.com">
+            <img src="assets/image/envelope.svg" alt="이메일">
+        </a>
+        <button class="contact-fab up" id="scrollToTopBtn">
+            <img src="assets/image/arrow_up.svg" alt="맨 위로">
+        </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer custom-footer">
+        <div class="footer-main">
+            <div class="footer-logo">
+                <img src="assets/image/logo_888.svg" alt="RabahGroow 로고">
+            </div>
+            <div class="footer-bottom-wrap">
+                <div class="footer-info">
+                    서울시 서초구 헌릉로 8길 9-8, 604호<span id="footer-info-break"></span>홍성삼 | 010-9248-8145 | <a
+                        href="mailto:sungsamhong@rabahgroow.com">sungsamhong@rabahgroow.com</a>
+                </div>
+                <div class="footer-copyright">
+                    <strong>rabahgroow</strong> © 2025. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 슬로건 문구 데이터
+        const slogans = [
+            {
+                title: '사이버 보안과 AI 융합으로<br>앞서가는 IT 서비스 리더',
+                desc: '당사의 기술력과 연구 역량은 <br>고객의 성공으로 이미 검증되었습니다.',
+                videoIdx: 0
+            },
+            {
+                title: '신뢰를 설계하는<br>지능형 보안 AI',
+                desc: 'AI 기반의 통합 데이터 서비스를 통해 <br>가치를 발견하고 미래를 설계합니다.',
+                videoIdx: 1
+            },
+            {
+                title: '사람을 지키는 AI,<br>건설현장의 안전을 생각합니다',
+                desc: '안전 객체 및 구조물 손상 탐지 모델을 활용해 <br>건설 현장의 위험 요소를 효과적으로 관리합니다.',
+                videoIdx: 2
+            },
+            {
+                title: 'AI와 데이터,<br>미래를 설계하는 기술',
+                desc: '데이터셋 구축부터 분석, 딥러닝·강화학습 적용까지 <br>AI 기술을 활용한 통합 데이터 서비스를 제공합니다.',
+                videoIdx: 3
+            }
+        ];
+
+        let current = 0;
+        const titleEl = document.getElementById('slogan-title');
+        const descEl = document.getElementById('slogan-desc');
+        const groupEl = document.getElementById('slogan-group');
+        const indicatorPageEl = document.getElementById('indicator-page');
+        const videos = [
+            document.getElementById('slider-video-0'),
+            document.getElementById('slider-video-1'),
+            document.getElementById('slider-video-2'),
+            document.getElementById('slider-video-3')
+        ];
+
+        function showSloganAndVideo(idx, prevIdx) {
+            // 슬로건 변경
+            titleEl.innerHTML = slogans[idx].title;
+            descEl.innerHTML = slogans[idx].desc;
+            // 페이지 번호 업데이트 (01, 02, 03, 04 형식)
+            const pageNumber = String(idx + 1).padStart(2, '0');
+            indicatorPageEl.innerHTML = pageNumber + ' <span class="hero-indicator-total">/ 04</span>';
+            // 영상 변경: prevIdx는 이전에 보여진 영상 인덱스
+            videos.forEach((v, i) => {
+                if (i === slogans[idx].videoIdx || i === prevIdx) {
+                    v.classList.add('active');
+                } else {
+                    v.classList.remove('active');
+                    v.classList.remove('fade-in');
+                    v.classList.remove('fade-out');
+                }
+            });
+        }
+
+        function crossFade() {
+            const prev = current;
+            current = (current + 1) % slogans.length;
+
+            // 슬로건은 즉시 교체 (페이드 효과 없음)
+            showSloganAndVideo(current, slogans[prev].videoIdx);
+
+            // 영상: 이전 영상 페이드 아웃, 새 영상 페이드 인
+            const prevVideoIdx = slogans[prev].videoIdx;
+            const nextVideoIdx = slogans[current].videoIdx;
+            videos[prevVideoIdx].classList.remove('fade-in');
+            videos[prevVideoIdx].classList.add('fade-out');
+            videos[nextVideoIdx].classList.remove('fade-out');
+            videos[nextVideoIdx].classList.add('fade-in');
+            videos[nextVideoIdx].classList.add('active');
+            videos[prevVideoIdx].classList.add('active');
+
+            setTimeout(() => {
+                // 영상: 이전 영상 active 해제, 새 영상만 active 유지
+                videos[prevVideoIdx].classList.remove('active');
+                videos[prevVideoIdx].classList.remove('fade-out');
+                videos[nextVideoIdx].classList.remove('fade-in');
+            }, 500);
+        }
+
+        setInterval(crossFade, 5000);
+        // 첫 문구/영상 보장
+        showSloganAndVideo(current, slogans[0].videoIdx);
+
+        // 연도별 데이터 (초기값은 모두 동일)
+        const historyData = {
+            '2024': [
+                {
+                    month: '10', items: [
+                        { main: 'LLM 학습용 데이터 내 유해표현 검출 AI 모델 구축', org: 'TTA/㈜SSL' }
+                    ]
+                },
+                {
+                    month: '08', items: [
+                        { main: '캄보디아 진료 플랫폼 대상 AI 기반 진위확인 S/W 개발', org: '중소기업벤처부' }
+                    ]
+                },
+                {
+                    month: '07', items: [
+                        { main: 'AI 알고리즘 개발 및 파인튜닝 용역', org: '㈜SSL' }
+                    ]
+                },
+                {
+                    month: '05', items: [
+                        { main: '한약 실험정보를 활용한 인공지능 기반 항암 약재배합 알고리즘 개발 연구', org: '한국한의약진흥원' }
+                    ]
+                }
+            ],
+            '2023': [
+                {
+                    month: '11', items: [
+                        { main: '딥러닝 기반 포트홀 식별 및 면적 산출연구', org: '한국교통대학교' }
+                    ]
+                },
+                {
+                    month: '09', items: [
+                        { main: 'APT 공격 그룹 분류를 위한 공격대응 수행 에이전트 개발', org: '㈜서일엔지니어링' },
+                        { main: '사이버 공격 시나리오 저작 활용을 위한 CVE- Technique 매핑 S/W 개발 및 데이터셋 구축', org: '국방과학기술연구소' }
+                    ]
+                },
+                {
+                    month: '06', items: [
+                        { main: '한의약 실험정보 기반 AI 모델 발굴을 위한 데이터 분석 및 AI모델 검증', org: '㈜중외정보기술' },
+                        { main: 'CHV 운전자 주행보조를 위하여 도로참조물 객체인식이 가능한 네비게이션 API연계 시작품 제작', org: '한국건설기술연구원' }
+                    ]
+                },
+                {
+                    month: '05', items: [
+                        { main: '교량 손상 객체 자동식별 소프트웨어 확장 및 이미지 메타 데이터를 활용한 정량화 모듈 개발', org: '한국건설기술연구원' },
+                        { main: '플랫폼 개발 구축 용역', org: '㈜지에스아이엘' }
+                    ]
+                },
+                {
+                    month: '01', items: [
+                        { main: '서남권 섬 접근성 향상을 위한 여객선터미널의 보행환경 평가 및 개선방안', org: '전남씨그랜트/목포해양대학교' },
+                        { main: '목포항 해운·항만물류업체 실태조사 정보시스템 개발 기초 연구', org: '목포해양대학교' },
+                        { main: 'S100 MICE 안전관리플랫폼', org: '㈜지에스아이엘' }
+                    ]
+                }], '2022': [
+                    {
+                        month: '11', items: [
+                            { main: 'AI기반 데이터 분석 및 딥러닝 교육', org: '국방과학연구소' },
+                            { main: '딥러닝 분석 및 연구개발 환경 구축 실습 교육', org: '국방과학연구소' }
+                        ]
+                    },
+                    {
+                        month: '10', items: [
+                            { main: '공격경로기반 공격분석을 위한 머신러닝 모델 개발', org: '㈜우진지앤에스' },
+                            { main: 'AI기반 사이버 모의훈련 및 공격 시나리오 분석 기술 개발', org: '㈜우진지앤에스' },
+                            { main: '도로 시설물 객체 인식을 위한 딥러닝 모델 설계 및 S/W개발', org: '한국건설기술연구원' }
+                        ]
+                    },
+                    {
+                        month: '08', items: [
+                            { main: '뉴럴 네트워크 이미지 프로세싱을 위한 데이터셋 구축 용역', org: '㈜피플엔테크놀러지' },
+                            { main: '스마트 동적 위험 예측 시스템 개발', org: '지에스아이엘' },
+                            { main: 'FHD급 화질의 도로시설물 데이터셋 구축', org: '한국건설기술연구원' }
+                        ]
+                    },
+                    {
+                        month: '06', items: [
+                            { main: 'GPU기반 병렬처리로 기반한 상황분석용 딥러닝 모델 개발', org: 'NIPA' }
+                        ]
+                    }
+                ], '2021': [
+                    {
+                        month: '12', items: [
+                            { main: '머신러닝 기반 실시간 영상 처리 모듈 개발', org: '에이클시스템㈜' }
+                        ]
+                    },
+                    {
+                        month: '09', items: [
+                            { main: '공세적 대응방책 추천 및 공세적도구 관련 기술 조사 및 분석', org: '국방과학연구소' }
+                        ]
+                    },
+                    {
+                        month: '06', items: [
+                            { main: '사이버 능동대응 작전 시험환경 구축', org: '국방과학연구소' }
+                        ]
+                    },
+                    {
+                        month: '05', items: [
+                            { main: '교량 손상 관리를 위한 딥러닝 기반의 교량이미지전처리 및 손상객체 자동검출 모델', org: '㈜피플엔테크놀러지' }
+                        ]
+                    }
+                ], '2020': [
+                    {
+                        month: '20.06', items: [
+                            { main: '기계학습 기반 도로/건설 빅데이터 수집 및 분석 알고리즘 연구개발', org: '㈜지에스아이엘' },
+                            { main: '침해지표와 지도/비지도 학습을 이용한 위험 판단 기술연구', org: '국방과학연구소' }
+                        ]
+                    },
+                    {
+                        month: '19.06', items: [
+                            { main: 'IoT 센서 및 데이터 수집플랫폼 디자인/설계', org: '㈜그린가이아' }
+                        ]
+                    },
+                    {
+                        month: '19.05', items: [
+                            { main: '덴디 : 치과 파노라마 방사선 분석 Ai', org: '㈜메디누보' },
+                            { main: '제한된 특징을 이용한 기계학습 기반의 양성종류 분류 방안 연구', org: '국가보안기술연구소' }
+                        ]
+                    },
+                    {
+                        month: '19.02', items: [
+                            { main: '전자 배노일지 임상시험 및 데이터 분석', org: '가천대학교 산학협력단' }
+                        ]
+                    },
+                    {
+                        month: '19.01', items: [
+                            { main: '수집 데이터 분석 알고리즘 개발 및 데이터 서버 구축', org: '에이치투플레이' }
+                        ]
+                    },
+                    {
+                        month: '18.06', items: [
+                            { main: '기계학습을 이용한 Authorship Attribution 기반의 지능형 악성코드 분석 및 공작자 식별 모델', org: '한국연구재단' },
+                            { main: 'PnC 관련 표준화 및 적합성 시험용 SW와 보안 알고리즘 및 어플리케이션 SW개발', org: '중소기업벤처부' },
+                            { main: 'Scattered sensing information 저장 및 모바일 앱을 이용한 원격제조 플랫폼 개발', org: '㈜글로쿼드텍' }
+                        ]
+                    },
+                    {
+                        month: '18.05', items: [
+                            { main: '해양관광에서 지능형 안전사고 예방 서비스 제공을 위한 지식기반 구축사업', org: '문화체육관광부' }
+                        ]
+                    },
+                    {
+                        month: '18.04', items: [
+                            { main: '리스크메트릭스 분석 및 알고리즘', org: '리스크메트릭스 분석 및 알고리즘' }
+                        ]
+                    },
+                    {
+                        month: '18.03', items: [
+                            { main: '수집 데이터 분석 알고리즘 개발 및 데이터 서버 구축', org: '에이치투플레이' }
+                        ]
+                    }
+                ]
+        };
+
+        function renderHistory(year) {
+            const list = document.getElementById('history-list');
+            list.innerHTML = '';
+            const data = historyData[year];
+            data.forEach(entry => {
+                const li = document.createElement('li');
+                li.className = 'history-item';
+                li.innerHTML = `
+              <span class="history-month${year === '2020' ? ' small-month' : ''}">${entry.month}</span>
+              <div class="history-content">
+                ${entry.items.map(item => `
+                    <p class="history-main">${item.main}</p>
+                    <p class="history-org">${item.org}</p>
+                  `).join('')}
+              </div>
+            `;
+                list.appendChild(li);
+            });
+        }
+
+        // 버튼 클릭 이벤트
+        document.querySelectorAll('.history-year-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('.history-year-btn').forEach(b => b.classList.remove('selected'));
+                this.classList.add('selected');
+                renderHistory(this.dataset.year);
+            });
+        });
+
+        // 최초 렌더링
+        renderHistory('2024');
+
+        const businessData = {
+            defense: {
+                title: '국방 / 사이버 보안 사업',
+                desc: '라바그루가 보유한 사이버보안 기술들을 이용한 <br>국방 및 사이버보안 관련 사업에서 <br>확실한 성과를 보이고 있습니다.',
+                subtitle: '사이버 보안을 위한 지능형 분석 기술 보유',
+                list: [
+                    'AI 기반의 지능형 보안 데이터 기술',
+                    '이상 탐지 및 공격 분류 기술',
+                    '보안 데이터 전처리 및 레이블링 기술',
+                    '사이버 보안 위험 평가 기술',
+                    'Attack Graph Node-Edge Scoring System 기술'
+                ],
+                img: 'assets/image/icon_business_defense.png',
+                imgAlt: '국방/사이버 보안 아이콘'
+            },
+            rnd: {
+                title: '연구개발 사업',
+                desc: '라바그루는 빅데이터를 다루는 기술을 사용하여 <br>꾸준히 데이터 관련 사업에서 <br>고객들의 신뢰를 얻고 있습니다.',
+                subtitle: '공공 및 민수분야에서 <br>AI기반 안전 및 보안관련 연구사업 수행',
+                list: [
+                    '기계 학습 기반 도로 / 건설 빅데이터 수집 및 분석 알고리즘 연구 개발',
+                    '수집 데이터 분석 알고리즘 개발 및 데이터 서버 구축',
+                    'AI기반 데이터 분석 및 딥러닝 교육공공 및 민수분야에서 AI기반 안전 및 보안관련 연구사업 수행'
+                ],
+                img: 'assets/image/icon_business_rnd.png',
+                imgAlt: '연구개발 아이콘'
+            },
+            si: {
+                title: 'SI 사업',
+                desc: '라바그루는 건설/안전 분야의 사업에서 <br>인공지능 기술을 사용하여 <br>높은 품질의 산출물을 만들고 있습니다.',
+                subtitle: 'Web/App SW개발, <br>데이터 구축사업 등 산업 전분야 SI 사업 수행',
+                list: [
+                    '딥러닝을 이용한 객체 인식 기술 보유',
+                    'AI기반 안전 분석 기술 보유',
+                    '교량 손상 객체 클래스별 데이터셋 구축 및 segmentation 식별',
+                    '해양관광 지능형 안전사고 예방 서비스를 위한 머신러닝 모델 및 파도 객체 탐지 딥러닝 모델',
+                    '침해 사고 분석 머신러닝 모델',
+                    '블랙박스 영상 내 도로 시설물 객체 인식 모델'
+                ],
+                img: 'assets/image/icon_business_si.png',
+                imgAlt: 'SI 아이콘'
+            }
+        };
+        function renderBusiness(type) {
+            const data = businessData[type];
+            document.getElementById('business-content').innerHTML = `
+            <div>
+                <h4 class="business-main-title">${data.title}</h4>
+                <p class="business-desc">${data.desc}</p>
+                <p class="business-subtitle">${data.subtitle}</p>
+                <ul class="business-list">
+                    ${data.list.map(item => `<li>${item}</li>`).join('')}
+                </ul>
+            </div>
+            <div>
+                <img src="${data.img}" alt="${data.imgAlt}" class="business-image">
+            </div>
+            `;
+        }
+        document.querySelectorAll('.business-category-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('.business-category-btn').forEach(b => b.classList.remove('selected'));
+                this.classList.add('selected');
+                renderBusiness(this.dataset.type);
+            });
+        });
+        // 최초 렌더링
+        renderBusiness('defense');
+
+        // R&D 슬라이더 이미지 자동 렌더링 및 무한 슬라이딩
+        const rndImages = Array.from({ length: 14 }, (_, i) => `assets/image/icon_rnd_${i + 1}.png`);
+        const slider = document.getElementById('rnd-slider');
+        function renderRndSlider() {
+            slider.innerHTML = `<div class="rnd-slider-track">${rndImages.concat(rndImages).map(src => `<img src='${src}' class='rnd-slider-img'>`).join('')}</div>`;
+        }
+        renderRndSlider();
+        // 무한 슬라이딩 애니메이션
+        let pos = 0;
+        const track = slider.querySelector('.rnd-slider-track');
+        function slide() {
+            pos -= 0.5;
+            if (Math.abs(pos) >= track.scrollWidth / 2) pos = 0;
+            track.style.transform = `translateX(${pos}px)`;
+            requestAnimationFrame(slide);
+        }
+        slide();
+
+        // 포트폴리오 슬라이더
+        const portfolioData = [
+            { title: "더드림 노트(기독교 대안학교 소통앱)", desktopImg: "portfolio_1.png", mobileImg: "portfolio_m_1.png" },
+            { title: "AI 기반 몰입형 사이버 레인지 훈련 시스템", desktopImg: "portfolio_2.png", mobileImg: "portfolio_m_2.png" },
+            { title: "교량 손상 객체", desktopImg: "portfolio_3.png", mobileImg: "portfolio_m_3.png" },
+            { title: "도로주행보조", desktopImg: "portfolio_4.png", mobileImg: "portfolio_m_4.png" },
+            { title: "사이버 보안 AGI 오케스트레이션", desktopImg: "portfolio_5.png", mobileImg: "portfolio_m_5.png" },
+            { title: "사이버 보안 취약점", desktopImg: "portfolio_6.png", mobileImg: "portfolio_m_6.png" },
+            { title: "해운항만 물류업체 현황 모니터링 시스템", desktopImg: "portfolio_7.png", mobileImg: "portfolio_m_7.png" },
+            { title: "한의약 그래프 기반 AI 약재조합 예측 및 시각화 모듈", desktopImg: "portfolio_8.png", mobileImg: "portfolio_m_8.png" },
+            { title: "AI 기반 여객 터미널 진입로 보행 방해율 분석 기술", desktopImg: "portfolio_9.png", mobileImg: "portfolio_m_9.png" }
+        ];
+
+        let currentPortfolioIdx = 0;
+
+        const portfolioTitleEl = document.querySelector('.portfolio-title');
+        const portfolioDescEl = document.querySelector('.portfolio-desc');
+        const portfolioImgEl = document.querySelector('.portfolio-image');
+        const prevPortfolioBtn = document.querySelector('.portfolio-nav-btn.prev');
+        const nextPortfolioBtn = document.querySelector('.portfolio-nav-btn.next');
+
+        function updatePortfolio(idx) {
+            const data = portfolioData[idx];
+            portfolioTitleEl.textContent = data.title;
+            portfolioDescEl.textContent = "SI 사업";
+
+            // 화면 크기에 따라 이미지 선택
+            const isMobile = window.innerWidth < 1025; // CSS 미디어쿼리와 동일한 기준
+            const imgFile = isMobile ? data.mobileImg : data.desktopImg;
+            portfolioImgEl.src = `assets/image/${imgFile}`;
+            portfolioImgEl.alt = data.title;
+        }
+
+        prevPortfolioBtn.addEventListener('click', () => {
+            currentPortfolioIdx = (currentPortfolioIdx - 1 + portfolioData.length) % portfolioData.length;
+            updatePortfolio(currentPortfolioIdx);
+        });
+
+        nextPortfolioBtn.addEventListener('click', () => {
+            currentPortfolioIdx = (currentPortfolioIdx + 1) % portfolioData.length;
+            updatePortfolio(currentPortfolioIdx);
+        });
+
+        // 초기화
+        updatePortfolio(currentPortfolioIdx);
+
+        // 화면 크기 변경 시 이미지 업데이트
+        window.addEventListener('resize', () => {
+            updatePortfolio(currentPortfolioIdx);
+        });
+
+        // 협력업체 로고 무한 슬라이더
+        const orgLogoCount = 9;
+        const orgLogoSlider = document.getElementById('org-logo-slider');
+        const orgLogoImgs = Array.from({ length: orgLogoCount }, (_, i) =>
+            `<img src="assets/image/logo_org_${i + 1}.png" alt="협력사 로고" class="org-logo-img">`
+        );
+        // 2배로 복제해서 무한루프 느낌
+        orgLogoSlider.innerHTML = `<div class="org-logo-track">${orgLogoImgs.concat(orgLogoImgs).join('')}</div>`;
+
+        let orgLogoPos = 0;
+        const orgLogoTrack = orgLogoSlider.querySelector('.org-logo-track');
+        function slideOrgLogo() {
+            orgLogoPos -= 0.5; // 속도 조절
+            if (Math.abs(orgLogoPos) >= orgLogoTrack.scrollWidth / 2) orgLogoPos = 0;
+            orgLogoTrack.style.transform = `translateX(${orgLogoPos}px)`;
+            requestAnimationFrame(slideOrgLogo);
+        }
+        slideOrgLogo();
+
+        // 슬라이딩 텍스트 무한 슬라이딩
+        const slidingTextContent = document.getElementById('sliding-text-content');
+        let slidingTextPos = 0;
+        function slideText() {
+            if (window.innerWidth < 1025) {
+                slidingTextPos -= 1; // 속도 조절
+            } else {
+                slidingTextPos -= 2; // 속도 조절
+            }
+            if (Math.abs(slidingTextPos) >= slidingTextContent.scrollWidth / 2) slidingTextPos = 0;
+            slidingTextContent.style.transform = `translateX(${slidingTextPos}px)`;
+            requestAnimationFrame(slideText);
+        }
+        slideText();
+
+        // 맨 위로 버튼 클릭 시 스크롤
+        document.getElementById('scrollToTopBtn').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // footer info 줄바꿈/구분자 동적 처리
+        function updateFooterInfoBreak() {
+            const brSpan = document.getElementById('footer-info-break');
+            if (!brSpan) return;
+            if (window.innerWidth < 1025) {
+                brSpan.innerHTML = '<br>';
+            } else {
+                brSpan.innerHTML = ' | ';
+            }
+        }
+        updateFooterInfoBreak();
+        window.addEventListener('resize', updateFooterInfoBreak);
+
+        // 스크롤 방향에 따라 헤더 숨김/표시
+        let lastScrollY = window.scrollY;
+        let ticking = false;
+        const desktopHeader = document.querySelector('.desktop-header');
+        const mobileHeader = document.querySelector('.is-hidden-desktop');
+        let isHeaderHidden = false;
+        // hero section의 높이 계산
+        const heroSection = document.getElementById('hero');
+
+        function updateHeaderBg() {
+            const scrollY = window.scrollY;
+            const heroHeight = heroSection.offsetHeight;
+            if (scrollY >= heroHeight - 1) {
+                desktopHeader && desktopHeader.classList.add('header-bg-black');
+                mobileHeader && mobileHeader.classList.add('header-bg-black');
+            } else {
+                desktopHeader && desktopHeader.classList.remove('header-bg-black');
+                mobileHeader && mobileHeader.classList.remove('header-bg-black');
+            }
+        }
+
+        function onScroll() {
+            const currentScrollY = window.scrollY;
+            // 헤더 배경 처리
+            updateHeaderBg();
+
+            // 맨 위에 도달했을 때 헤더 표시
+            if (currentScrollY <= 0) {
+                if (isHeaderHidden) {
+                    desktopHeader && (desktopHeader.style.transform = 'translateY(0)');
+                    mobileHeader && (mobileHeader.style.transform = 'translateY(0)');
+                    isHeaderHidden = false;
+                }
+            } else if (currentScrollY > lastScrollY && currentScrollY > 50) {
+                // 아래로 스크롤: 헤더 숨김
+                if (!isHeaderHidden) {
+                    desktopHeader && (desktopHeader.style.transform = 'translateY(-100%)');
+                    mobileHeader && (mobileHeader.style.transform = 'translateY(-100%)');
+                    isHeaderHidden = true;
+                }
+            } else if (currentScrollY < lastScrollY) {
+                // 위로 스크롤: 헤더 표시
+                if (isHeaderHidden) {
+                    desktopHeader && (desktopHeader.style.transform = 'translateY(0)');
+                    mobileHeader && (mobileHeader.style.transform = 'translateY(0)');
+                    isHeaderHidden = false;
+                }
+            }
+            lastScrollY = currentScrollY;
+            ticking = false;
+        }
+
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(onScroll);
+                ticking = true;
+            }
+        }
+
+        window.addEventListener('scroll', requestTick);
+        // hero section 높이 변경될 수 있으니 리사이즈에도 적용
+        window.addEventListener('resize', updateHeaderBg);
+        // 초기 스타일 세팅 및 배경도 초기화
+        desktopHeader && (desktopHeader.style.transition = 'transform 0.3s cubic-bezier(0.4,0,0.2,1), background 0.3s cubic-bezier(0.4,0,0.2,1)');
+        mobileHeader && (mobileHeader.style.transition = 'transform 0.3s cubic-bezier(0.4,0,0.2,1), background 0.3s cubic-bezier(0.4,0,0.2,1)');
+        updateHeaderBg();
+
+        // Mobile Side Menu 기능
+        const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+        const mobileSideMenu = document.getElementById('mobile-side-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+        // 메뉴 열기
+        mobileMenuIcon.addEventListener('click', function () {
+            mobileSideMenu.classList.add('active');
+            // 헤더를 오른쪽으로 슬라이딩하여 숨김
+            mobileHeader && (mobileHeader.style.transform = 'translateY(-100%)');
+        });
+
+        // 메뉴 닫기
+        mobileMenuClose.addEventListener('click', function () {
+            mobileSideMenu.classList.remove('active');
+        });
+
+        // 메뉴 링크 클릭 시 메뉴 닫기
+        const mobileMenuLinks = mobileSideMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                mobileSideMenu.classList.remove('active');
+            });
+        });
+
+        // 메뉴 외부 클릭 시 메뉴 닫기
+        document.addEventListener('click', function (event) {
+            if (!mobileSideMenu.contains(event.target) && !mobileMenuIcon.contains(event.target)) {
+                mobileSideMenu.classList.remove('active');
+            }
+        });
+
+        // ABOUT 링크 클릭 시 맨 위로 스크롤
+        document.getElementById('about-link').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // 강제로 헤더 보이게 하기
+            mobileHeader && (mobileHeader.style.transform = 'translateY(0)');
+            isHeaderHidden = false;
+        });
+    </script>
+</body>
+
+</html>
